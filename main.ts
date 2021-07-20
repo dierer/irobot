@@ -653,7 +653,7 @@ namespace irobot {
     // judge button from ps2
     //% blockId=irobot_ps2 block="设置PS2手柄: %b|按下"
     //% weight=98
-    //% group="机器人运动"
+    //% group="机器人遥控"
     export function buttonPressed(button: PS2Button): number {
         if (!ps2Connect) {
             return 0x00;
