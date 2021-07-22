@@ -254,8 +254,10 @@ namespace irobot {
         switch (direction) {
             case ScreenDirection.Vertical:
                 screenDir = "0";
+                break;
             case ScreenDirection.Horizontal:
                 screenDir = "1";
+                break;
         }
         serial.writeLine("DIR(" + screenDir + ");");
         basic.pause(20);
