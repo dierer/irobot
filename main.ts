@@ -373,7 +373,7 @@ namespace irobot {
             }
             basic.pause(35);
         } else if (size == StringSize.MediumSize) {
-            if (!lucency) {
+            if (lucency) {
                 serial.writeLine("DC24(" + x.toString() + "," + y.toString() + ",'"
                     + str + "'," + colour.toString() + "," + ");");
             } else {
@@ -382,7 +382,7 @@ namespace irobot {
             }
             basic.pause(40);
         } else if (size == StringSize.LargeSize) {
-            if (!lucency) {
+            if (lucency) {
                 serial.writeLine("DC32(" + x.toString() + "," + y.toString() + ",'"
                     + str + "'," + colour.toString() + "," + ");");
             } else {
